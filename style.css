@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px 0;
+    /* text-align: center; */
+    position: relative;
+    height: 20px;
+}
+header h1 svg{
+    width: 18px;
+    margin-right: 4px;
+    fill: white;
+    margin-left: 300px;
+    position: relative;
+    top: 1px;
+}
+header h1{
+    font-size: 21px;
+    margin-top: -4px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.hamburger i{
+    margin-right: 200px;
+    font-size: 25px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+
