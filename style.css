@@ -10,19 +10,21 @@ header {
     background-color: #ff6600;
     color: white;
     padding: 20px 0;
-    /* text-align: center; */
-    position: relative;
-    height: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
-header h1 svg{
-    width: 18px;
+
+header h1 svg {
+    width: 19px;
     margin-right: 4px;
     fill: white;
-    margin-left: 300px;
+    margin-left: 80px;
     position: relative;
     top: 1px;
 }
-header h1{
+
+header h1 {
     font-size: 21px;
     margin-top: -4px;
 }
@@ -33,14 +35,17 @@ header h1{
     align-items: center;
     padding: 0 20px;
 }
-.hamburger{
+
+.hamburger {
     margin-top: -17px;
 }
-.hamburger i{
-    margin-right: 200px;
+
+.hamburger i {
+    margin-right: 90px;
     font-size: 25px;
     cursor: pointer;
 }
+
 .search-area {
     position: relative;
     height: 280px;
@@ -52,7 +57,7 @@ header h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
 }
 
 .search-area::before {
@@ -62,9 +67,10 @@ header h1{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
+
 .search-container, .search-content {
     position: relative;
     z-index: 2;
@@ -85,21 +91,38 @@ header h1{
     padding: 14px;
     background-color: #e65c00;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     border: 1px solid white;
-    border-radius: 50%;
 }
-.search-container button i{
+
+.search-container button i {
     color: white;
 }
-.search-content h2{
+
+.search-container button:hover {
+    border: 1px solid #e65c00;
+    color: #e65c00;
+}
+
+.search-content h2 {
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.search-content{
+
+.search-content {
     text-align: center;
     font-size: 13px;
     margin-left: -30px;
 }
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
